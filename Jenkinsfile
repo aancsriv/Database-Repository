@@ -10,7 +10,7 @@ pipeline {
 
         stage('Execute SQL') {
             steps {
-                bat 'sqlcmd -S localhost -E -d PracticeDB -i scripts\\001_CreateEmployee.sql'
+                bat 'sqlcmd -S AANCHAL\\SQLEXPRESS -E -d PracticeDB -i scripts\\001_CreateEmployee.sql'
             }
         }
     }
